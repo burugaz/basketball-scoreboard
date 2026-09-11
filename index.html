@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Scoreboard</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="background"></div>
+        <div class="scoreboard">
+            <div id="home" class="score-section">
+                <h2 class="head">HOME</h2>
+                <p class="score" id="home-score">0</p>
+                <button class="btn" id="addOne-btn-home" type="button" onclick="add(1, 'home')">+1</button>
+                <button class="btn" id="addTwo-btn-home" type="button" onclick="add(2, 'home')">+2</button>
+                <button class="btn" id="addThree-btn-home" type="button" onclick="add(3, 'home')">+3</button>
+            </div>
+            <div id="guest" class="score-section">
+                <h2 class="head">AWAY</h2>
+                <p class="score" id="guest-score">0</p>
+                <button class="btn" id="addOne-btn-guest" type="button" onclick="add(1, 'guest')">+1</button>
+                <button class="btn" id="addTwo-btn-guest"type="button" onclick="add(2, 'guest')">+2</button>
+                <button class="btn" id="addThree-btn-guest" type="button" onclick="add(3, 'guest')">+3</button>
+            </div>
+        </div>
+        <!-- <div class="periods">
+            <div class="first-period">
+                <button type="button" class="btn" onclick="saveFirstPeriod()">End First Round</button>
+                <p id="first-period-results"></p>
+            </div>
+            <div class="first-period">
+                <p id="first-period-results" onclick="saveFirstPeriod"></p>
+            </div>
+            <div class="first-period">
+                <p id="first-period-results" onclick="saveFirstPeriod"></p>
+            </div>
+        </div> -->
+        <script src="script.js"></script>
+    </body>
+</html>
